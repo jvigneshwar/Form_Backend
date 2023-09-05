@@ -18,10 +18,11 @@ mongoose.connect("mongodb+srv://vicky:ASas12.,@cluster0.ud5itus.mongodb.net/?ret
     })
 
 app.post("/", async (req, res) => {
+    console.log("hit")
     let data = req.body;
     try {
         await User.create(data);
-        
+
         let question = [
             'Email',
             'Full Name',
