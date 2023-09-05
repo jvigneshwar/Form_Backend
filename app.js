@@ -11,7 +11,7 @@ app.use(cors());
 
 mongoose.connect("mongodb+srv://vicky:ASas12.,@cluster0.ud5itus.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
-        app.listen(4000, "localhost", () => console.log("connected"))
+        app.listen(4000,() => console.log("connected"))
     })
     .catch((err) => {
         console.log(err);
